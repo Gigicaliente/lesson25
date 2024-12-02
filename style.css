@@ -1,0 +1,89 @@
+p {
+    font-weight: 400;
+    color: blue;
+ 
+}
+
+p::before {
+    content: "World ";
+    font-style: italic;
+    color: lightblue;
+}
+
+
+h1::after {
+    content: url(./dog.png);  
+}
+
+
+h2::after {
+    content: url(./images.jpeg);
+  
+}
+
+.box1 {
+width: 100px;
+height: 100px;
+background-color: blue;
+position: relative;
+margin: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.box1::before {
+    position: absolute;
+    content: '';
+    border: 3px solid black;
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+
+}
+
+.box1::after {
+    position: absolute;
+    content: '';
+    border: 2px solid green;
+    top: -10px;
+    right: -10px;
+    left: -10px;
+    bottom: -10px;
+}
+
+
+.box2 {
+width: 100px;
+height: 100px;
+position: relative;
+border: 1ps solid black;
+background-color: aliceblue;
+margin: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.box2::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    right: -10px;
+    left: -10px;
+    bottom: -10px;
+    border: 2px solid blue;
+}
+
+.box2::after {
+    position: absolute;
+    content: '';
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+    border: 2px solid violet;
+}
